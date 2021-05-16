@@ -1,0 +1,104 @@
+:root{
+    --fuenteTitulo:'Hammersmith One', sans-serif;
+    --fuentePrincipal:'Raleway', sans-serif;;
+
+    --negro:#000000;
+    --blanco: #FFFFFF;
+    --grisClaro:#323232;
+    --grisOscuro:#333333;
+    --RojoRosado:#ff1e56;
+    --AmarilloNaranja:#ffac41;
+    --AzulClaro:#e1f4f3;
+}
+
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+body{
+
+}
+
+
+h1{
+    font-family: var(--fuenteTitulo);
+    color:var(--blanco) ;
+}
+h2{
+    font-family: var(--fuentePrincipal);
+    font-size: 4rem;
+    margin: 0;
+}
+h3,p{
+    font-family: var(--fuentePrincipal);
+}
+p{
+    font-size: 1.2rem;
+}
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    text-align: center;
+    background-color: var(--negro);
+}
+
+.icono-barber{
+    width: 50px;
+    height: 75px;
+}
+
+@media  (min-width: 768px) {
+    .icono-barber{
+        width: 65px;
+        height: 75px;
+    }
+}
+
+.imagen{
+    min-height: 30rem;
+    background-image: url(../img/corte.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+@media  (min-width: 768px) {
+    .contenedor-presentacion{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .imagen{
+        min-height: 50rem;
+        grid-column: 1 / 2;
+    }
+}
+
+.presentacion{
+    align-self: center;               /*Centra verticalmente con CSS GRID*/
+    text-align: center;                 /*Centra horizontalmente con CSS*/
+}
+
+input{
+    padding: 1rem 3rem;
+    background-color: var(--negro);
+    color: var(--blanco);
+    border-radius: 12px;
+    font-family: var(--fuentePrincipal);
+    border:none;
+    cursor: pointer;
+}
+
+input:hover{
+    /* background-color: var(--blanco); */
+}
+
